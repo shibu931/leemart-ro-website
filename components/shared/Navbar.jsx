@@ -30,9 +30,9 @@ const Navbar = () => {
                 </Link>
                 <NavigationMenu className="ms-auto">
                     <NavigationMenuList>
-                        {navItems.map((item)=>(
+                        {navItems.map((item,index)=>(
                         item.subMenu ? (
-                        <NavigationMenuItem>
+                        <NavigationMenuItem key={index}>
                             <NavigationMenuTrigger >{item.label}</NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -51,8 +51,8 @@ const Navbar = () => {
                                         </NavigationMenuLink>
                                     </li>
                                         {
-                                            item.subMenu.map((subItem)=>(
-                                                <li className="border text-center rounded-md bg-blue-200/50 hover:bg-blue-200/80 focus:bg-blue-200/80 focus:outline-1 my-1 py-2">
+                                            item.subMenu.map((subItem,index)=>(
+                                                <li key={index} className="border text-center rounded-md bg-blue-200/50 hover:bg-blue-200/80 focus:bg-blue-200/80 focus:outline-1 my-1 py-2">
                                                     <Link href={subItem.href} >{subItem.label}</Link>
                                                 </li>
                                             )) 
@@ -61,7 +61,7 @@ const Navbar = () => {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         ):(
-                        <NavigationMenuItem>
+                        <NavigationMenuItem key={index}>
                             <Link href={item.href} legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     {item.label}

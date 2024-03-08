@@ -33,37 +33,37 @@ const homeCatalog = [
 
 const uspList = [
   {
-    img: "https://picsum.photos/40",
+    img: "/img/filtration.png",
     title: "Ultra-Pure Filtration",
     color:"bg-red-500",
     content: " Our RO water purifier ensures ultra-pure water by employing advanced filtration technology, removing even the tiniest impurities for crystal-clear drinking water."
   },
   {
-    img: "https://picsum.photos/40",
+    img: "/img/functionality.png",
     title: "Smart Design, Sleek Functionality",
     color:"bg-green-500",
     content: "Designed to seamlessly integrate into any kitchen space, our RO water purifiers boast sleek aesthetics while delivering powerful filtration performance, ensuring both style and substance."
   },
   {
-    img: "https://picsum.photos/40",
+    img: "/img/health.png",
     title: "Healthier Living",
     color:"bg-yellow-500",
     content: "With every sip, our RO water purifiers provide peace of mind, delivering water that is free from contaminants, bacteria, and harmful chemicals, promoting a healthier lifestyle for you and your family."
   },
   {
-    img: "https://picsum.photos/40",
+    img: "/img/sustainable.png",
     title: "Sustainable Solution",
     color:"bg-blue-500",
     content: "Embracing eco-conscious practices, our RO water purifiers are engineered for sustainability, minimizing water wastage while maximizing purification efficiency, contributing to a cleaner, greener future."
   },
   {
-    img: "https://picsum.photos/40",
+    img: "/img/performance.png",
     title: "Trusted Performance",
     color:"bg-purple-500",
     content: "Backed by years of expertise and innovation, our RO water purifiers offer reliable performance, earning the trust of countless households worldwide for their consistent quality and effectiveness."
   },
   {
-    img: "https://picsum.photos/40",
+    img: "/img/customer.png",
     title: "Customer-Centric Excellence",
     color:"bg-cyan-500",
     content: "From installation to maintenance, our dedicated customer support ensures a hassle-free experience, providing prompt assistance and guidance every step of the way, because your satisfaction is our priority."
@@ -183,8 +183,8 @@ export default function Home() {
         <div className="container">
           <div className="grid gap-4 lg:gap-8 lg:grid-cols-2">
             {
-              homeCatalog.map((item) => (
-                <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10">
+              homeCatalog.map((item,index) => (
+                <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10" key={index}>
                   <div className="grid sm:grid-cols-2">
                     <div>
                       <h3 className="mb-4 text-2xl font-extrabold text-blue-900">{item.label}</h3>
@@ -235,8 +235,8 @@ export default function Home() {
           <h2 className="text-3xl">Our Usp</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 mt-10 lg:px-10">
             {
-              uspList.map((item) => (
-                <div className="p-4 lg:p-8 shadow-lg bg-white shadow-blue-300/20 rounded-xl">
+              uspList.map((item,index) => (
+                <div className="p-4 lg:p-8 shadow-lg bg-white shadow-blue-300/20 rounded-xl" key={index}>
                   <div className={`mx-auto mb-4 h-[60px] w-[60px] rounded-full p-3 ${item.color}`}>
                     <Image src={item.img} className="m-auto" width={40} height={40} alt="Usp" />
                   </div>

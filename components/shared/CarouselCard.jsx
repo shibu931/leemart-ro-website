@@ -16,8 +16,8 @@ const CarouselCard = ({ reviews }) => {
         <Carousel>
             <CarouselContent>
                 {
-                    reviews.map((item) => (
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                    reviews.map((item,index) => (
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={index}>
                             <div className="border border-blue-700/20 rounded-lg overflow-hidden">
                                 <div className="review-header bg-blue-700/25 flex justify-between p-3">
                                     <span className="font-semibold ">{item.name}</span>
