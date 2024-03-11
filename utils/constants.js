@@ -17,7 +17,7 @@ export const navItems = [
                 href: "/products/uv-water-purifiers"
             },
             {
-                label: "Commercial Water Purifiers",
+                label: "Industrial Water Plant",
                 href: "/products/commercial-water-purifiers"
             },
         ]
@@ -28,8 +28,12 @@ export const navItems = [
         img:"menu-service-img.jpg",
         subMenu:[
             {
-                label: "Commercial Water Purifiers",
-                href: "/services"
+                label: "Ro Water Purifiers",
+                href: "/services/ro-water-purifiers"
+            },
+            {
+                label: "Industrial Water Plant",
+                href: "/services/industrial-water-plant"
             },
         ]
     },

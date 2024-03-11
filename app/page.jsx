@@ -23,11 +23,11 @@ export default function Home() {
                     <div >
                       <p className="text-lg font-normal text-left">Google</p>
                       <span className="font-bold">4.9/5
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                       </span>
                     </div>
                   </div>
@@ -39,11 +39,11 @@ export default function Home() {
                     <div >
                       <p className="text-lg font-normal text-left">Trustpilot</p>
                       <span className="font-bold">4.4/5
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                       </span>
                     </div>
                   </div>
@@ -54,11 +54,11 @@ export default function Home() {
                     <div >
                       <p className="text-lg font-normal text-left">Reviews Io</p>
                       <span className="font-bold">4.9/5
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
+                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                       </span>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ export default function Home() {
         <div className="container">
           <div className="grid gap-4 lg:gap-8 lg:grid-cols-2">
             {
-              homeCatalog.map((item,index) => (
+              homeCatalog.map((item, index) => (
                 <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10" key={index}>
                   <div className="grid sm:grid-cols-2">
                     <div>
@@ -111,6 +111,48 @@ export default function Home() {
                 </div>
               ))
             }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <h2 className="text-center text-3xl">Our Services</h2>
+          <div className="my-10">
+            <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5">
+              <div>
+                <h3 className="mb-3 text-blue-900 font-extrabold text-2xl">Ro Water Purifier Service's</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eum. Officia a libero suscipit laboriosam labore minima placeat! Accusantium quia dolorum similique accusamus eveniet, sint pariatur corrupti reprehenderit illum, laborum ullam eos velit aut sunt inventore dolor doloremque ut magnam? Rerum, obcaecati nam. Minima ut laudantium similique harum quae! Neque tempora, earum id temporibus ea illum magni distinctio sit! Iure?</p>
+                <Button className="bg-blue-500 hover:bg-blue-600 mt-5">
+                  <Link href="/services/ro-water-purifier-service">Learn More</Link>
+                </Button>
+              </div>
+              <div className="mx-auto">
+                <Image
+                  src="/img/service_man.png"
+                  width={350}
+                  height={350}
+                  alt="service_man"
+                />
+              </div>
+            </div>
+            <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5 mt-5">
+            <div className="mx-auto">
+                <Image
+                  src="/img/industrial_plant.png"
+                  width={350}
+                  height={350}
+                  alt="industrial plant"
+                />
+              </div>
+              <div>
+                <h3 className="mb-3 text-blue-900 font-extrabold text-2xl">Industrial Water Plant Service's</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eum. Officia a libero suscipit laboriosam labore minima placeat! Accusantium quia dolorum similique accusamus eveniet, sint pariatur corrupti reprehenderit illum, laborum ullam eos velit aut sunt inventore dolor doloremque ut magnam? Rerum, obcaecati nam. Minima ut laudantium similique harum quae! Neque tempora, earum id temporibus ea illum magni distinctio sit! Iure?</p>
+                <Button className="bg-blue-500 hover:bg-blue-600 mt-5">
+                  <Link href="/services/ro-water-purifier-service">Learn More</Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -143,9 +185,9 @@ export default function Home() {
           <h2 className="text-3xl">Our Usp</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 mt-10 lg:px-10">
             {
-              uspList.map((item,index) => (
+              uspList.map((item, index) => (
                 <div className="p-4 lg:p-8 shadow-lg bg-white shadow-blue-300/20 rounded-xl" key={index}>
-                  <div className={`mx-auto mb-4 h-[60px] w-[60px] rounded-full p-3 ${item.color}`}>
+                  <div className={`mx-auto mb-4 h-[60px] w-[60px] rounded-full p-3 bg-blue-500`}>
                     <Image src={item.img} className="m-auto" width={40} height={40} alt="Usp" />
                   </div>
                   <h3 className="text-2xl text-blue-900 mb-2 font-semibold">{item.title}</h3>
@@ -163,19 +205,10 @@ export default function Home() {
           <h2 className="text-center text-3xl">Testimonials</h2>
           <div className="grid md:grid-cols-8 mt-10">
             <div className="col-span-6 col-start-2">
-              <CarouselCard reviews={reviews}/>
+              <CarouselCard reviews={reviews} />
             </div>
           </div>
-        </div>  
-      </section>
-
-      <section className="mb-0 pb-10">
-          <div className="container">
-            <h2 className="text-center text-3xl">Our Well Known Reputeted Clients</h2>
-            <div className="mt-8">
-
-            </div>
-          </div>
+        </div>
       </section>
 
     </>
