@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <>
       <div className="hero-banner text-white">
-        <div className="container lg:py-10">
+        <div className="container py-5 lg:py-10">
 
           <div className="grid lg:grid-cols-2">
             <div className="my-auto text-center">
-              <h1 className="text-5xl leading-tight font-semibold">Welcome to Leemart<br /> <span className="text-4xl">Your Source for Pure, Refreshing Water</span></h1>
-              <p className="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium rerum inventore illum mollitia officia libero commodi nisi nam velit quia vel fugit culpa quis aspernatur amet</p>
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 mt-8">
+              <h1 className="text-4xl lg:text-5xl leading-tight font-semibold">Welcome to Leemart<br /> <span className="lg:text-4xl text-3xl">Your Source for Pure, Refreshing Water</span></h1>
+              <p className="lg:text-center mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium rerum inventore illum mollitia officia libero commodi nisi nam velit quia vel fugit culpa quis aspernatur amet</p>
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-8">
                 <div className="mx-auto">
                   <div className="border rounded-lg bg-white/5 border-white/20 shadow-sm shadow-white/20 p-2 flex">
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/google.webp" width={50} height={50} alt="Google" />
@@ -33,7 +33,6 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mx-auto">
-
                   <div className="border rounded-lg bg-white/5 border-white/20 shadow-sm shadow-white/20 p-2 flex">
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/Trustpilot-icon.svg" width={50} height={50} alt="trustpilot" />
                     <div >
@@ -201,10 +200,10 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container">
+        <div className="container px-2">
           <h2 className="text-center text-3xl">Testimonials</h2>
-          <div className="grid md:grid-cols-8 mt-10">
-            <div className="col-span-6 col-start-2">
+          <div className="grid grid-cols-1 md:grid-cols-8 mt-10">
+            <div className="lg:col-span-6 lg:col-start-2">
               <CarouselCard reviews={reviews} />
             </div>
           </div>

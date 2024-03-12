@@ -18,7 +18,7 @@ import { navItems } from "@/utils/constants"
 
 const Navbar = () => {
     return (
-        <header className='bg-white'>
+        <header className='bg-white hidden lg:block'>
             <div className="container flex py-3">
                 <Link href='/' className="my-auto">
                     <Image
