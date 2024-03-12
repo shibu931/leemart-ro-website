@@ -82,7 +82,7 @@ export default function Home() {
           width={1920}
           height={100}
           alt="waves"
-          className="banner-wave"
+          className="banner-wave lg:w-full"
         />
       </div>
 
@@ -93,10 +93,19 @@ export default function Home() {
               homeCatalog.map((item, index) => (
                 <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10" key={index}>
                   <div className="grid sm:grid-cols-2">
+                  <div className="mx-auto">
+                      <Image
+                        src={`/img/${item.img}`}
+                        width={320}
+                        height={300}
+                        alt="ro-water-purifier"
+                        className="lg:hidden block"
+                      />
+                    </div>
                     <div>
                       <h3 className="mb-4 text-2xl font-extrabold text-blue-900">{item.label}</h3>
                       <p className="mb-4">{item.description}</p>
-                      <Button className="bg-blue-500 border hover:bg-blue-600 border-blue-400/20"><Link href={item.href}>Learn More</Link></Button>
+                      <Button className="bg-blue-500 border hover:bg-blue-600 border-blue-400/20"><Link href={item.href}>View Products</Link></Button>
                     </div>
                     <div className="mx-auto">
                       <Image
@@ -104,6 +113,7 @@ export default function Home() {
                         width={320}
                         height={300}
                         alt="ro-water-purifier"
+                        className="hidden lg:block"
                       />
                     </div>
                   </div>
@@ -119,6 +129,14 @@ export default function Home() {
           <h2 className="text-center text-3xl">Our Services</h2>
           <div className="my-10">
             <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5">
+            <div className="mx-auto lg:hidden block">
+                <Image
+                  src="/img/service_man.png"
+                  width={350}
+                  height={350}
+                  alt="service_man"
+                />
+              </div>
               <div>
                 <h3 className="mb-3 text-blue-900 font-extrabold text-2xl">Ro Water Purifier Service's</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eum. Officia a libero suscipit laboriosam labore minima placeat! Accusantium quia dolorum similique accusamus eveniet, sint pariatur corrupti reprehenderit illum, laborum ullam eos velit aut sunt inventore dolor doloremque ut magnam? Rerum, obcaecati nam. Minima ut laudantium similique harum quae! Neque tempora, earum id temporibus ea illum magni distinctio sit! Iure?</p>
@@ -126,7 +144,7 @@ export default function Home() {
                   <Link href="/services/ro-water-purifier-service">Learn More</Link>
                 </Button>
               </div>
-              <div className="mx-auto">
+              <div className="mx-auto hidden lg:block">
                 <Image
                   src="/img/service_man.png"
                   width={350}
@@ -158,7 +176,7 @@ export default function Home() {
 
       <section>
         <div className="container text-center text-white">
-          <div className="primary-bg border border-blue-900/20 shadow-md shadow-white p-4 md:p-8 rounded-xl grid lg:grid-cols-4 md:grid-cols-2">
+          <div className="primary-bg border border-blue-900/20 shadow-md shadow-white p-8 rounded-xl grid lg:grid-cols-4 grid-cols-2 gap-8">
             <div className="lg:px-10">
               <h3 className="text-4xl font-bold mb-3">1200+</h3>
               <p>Satisfied clients love our reliable, pure water solutions. </p>
