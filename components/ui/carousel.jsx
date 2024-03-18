@@ -179,7 +179,7 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       variant={variant}
       size={size}
       className={cn("absolute h-8 w-8 rounded-full", orientation === "horizontal"
-        ? "left-1/2 translate-x-8 -bottom-10 lg:-right-12 lg:top-1/2 lg:-translate-y-1/2"
+        ? "left-1/2 lg:left-full translate-x-8 -bottom-10 -right-12 lg:top-1/2 lg:-translate-y-1/2"
         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}

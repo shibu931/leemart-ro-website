@@ -22,7 +22,7 @@ export default function Home() {
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/google.webp" width={50} height={50} alt="Google" />
                     <div >
                       <p className="text-lg font-normal text-left">Google</p>
-                      <span className="font-bold">4.9/5
+                      <span className="font-bold">4.5/5
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
@@ -37,7 +37,7 @@ export default function Home() {
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/Trustpilot-icon.svg" width={50} height={50} alt="trustpilot" />
                     <div >
                       <p className="text-lg font-normal text-left">Trustpilot</p>
-                      <span className="font-bold">4.4/5
+                      <span className="font-bold">4/5
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
@@ -52,7 +52,7 @@ export default function Home() {
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/review-io.svg" width={50} height={50} alt="Reviews Io" />
                     <div >
                       <p className="text-lg font-normal text-left">Reviews Io</p>
-                      <span className="font-bold">4.9/5
+                      <span className="font-bold">4.5/5
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
@@ -93,13 +93,12 @@ export default function Home() {
               homeCatalog.map((item, index) => (
                 <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10" key={index}>
                   <div className="grid sm:grid-cols-2">
-                  <div className="mx-auto">
+                  <div className="mx-auto lg:hidden block">
                       <Image
                         src={`/img/${item.img}`}
                         width={320}
                         height={300}
                         alt="ro-water-purifier"
-                        className="lg:hidden block"
                       />
                     </div>
                     <div>
@@ -107,13 +106,12 @@ export default function Home() {
                       <p className="mb-4">{item.description}</p>
                       <Button className="bg-blue-500 border hover:bg-blue-600 border-blue-400/20"><Link href={item.href}>View Products</Link></Button>
                     </div>
-                    <div className="mx-auto">
+                    <div className="mx-auto hidden lg:block">
                       <Image
                         src={`/img/${item.img}`}
                         width={320}
                         height={300}
                         alt="ro-water-purifier"
-                        className="hidden lg:block"
                       />
                     </div>
                   </div>
