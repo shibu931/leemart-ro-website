@@ -52,8 +52,8 @@ const Navbar = () => {
                                     </li>
                                         {
                                             item.subMenu.map((subItem,index)=>(
-                                                <li key={index} className="border text-center rounded-md bg-blue-200/50 hover:bg-blue-200/80 focus:bg-blue-200/80 focus:outline-1 my-1 py-2">
-                                                    <Link href={subItem.href} >{subItem.label}</Link>
+                                                <li key={index} className="text-center"> 
+                                                    <Link className="border rounded-md bg-blue-200/50 hover:bg-blue-200/80 focus:bg-blue-200/80 focus:outline-1 block mb-1 py-2" href={subItem.href} >{subItem.label}</Link>
                                                 </li>
                                             )) 
                                         }

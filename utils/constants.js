@@ -84,13 +84,13 @@ export const uspList = [
       img: "/img/filtration.png",
       title: "Ultra-Pure Filtration",
       color:"bg-red-500",
-      content: " Our RO water purifier ensures ultra-pure water by employing advanced filtration technology, removing even the tiniest impurities for crystal-clear drinking water."
+      content: "Experience the highest level of water purity with our cutting-edge RO water purifier. Utilising state-of-the-art filtration technology, it effectively eliminates even the most minuscule impurities, resulting in pristine drinking water that is crystal-clear and refreshing."
     },
     {
       img: "/img/functionality.png",
       title: "Smart Design, Sleek Functionality",
       color:"bg-green-500",
-      content: "Designed to seamlessly integrate into any kitchen space, our RO water purifiers boast sleek aesthetics while delivering powerful filtration performance, ensuring both style and substance."
+      content: "Our RO water purifiers are expertly crafted to effortlessly blend into any kitchen, combining elegant design with exceptional filtration capabilities. Experience the perfect balance of beauty and functionality."
     },
     {
       img: "/img/health.png",
