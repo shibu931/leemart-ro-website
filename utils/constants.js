@@ -29,18 +29,18 @@ export const navItems = [
         subMenu:[
             {
                 label: "Ro Water Purifiers",
-                href: "/services/ro-water-purifiers"
+                href: "/services/ro-water-purifiers-servicing"
             },
             {
                 label: "Industrial Water Plant",
-                href: "/services/industrial-water-plant"
+                href: "/services/industrial-water-plant-servicing"
             },
         ]
     },
-    {
-        label: "Blogs",
-        href: "/blogs",
-    },
+    // {
+    //     label: "Blogs",
+    //     href: "/blogs",
+    // },
     {
         label: "About Us",
         href: "/about-us"
@@ -55,25 +55,25 @@ export const navItems = [
 export const homeCatalog = [
     {
       label: "Ro Water Purifiers",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam alias quam hic corrupti quod iure fugiat sunt suscipit nemo accusamus ipsum cumque a similique recusandae placeat adipisci dolore voluptatum eveniet odit ut vero perspiciatis! Aliquam et ex eius tempore, quaerat laboriosam culpa animi, eum reprehenderit vero exercitationem facere quos iste esse temporibus non?",
+      description: "Thousands trust Leemart Water Purifiers, India's top brand, for pure water. Leemart promises the highest-quality water with breakthrough Mineral Purification technology and a multi-stage purification process includes RO+UV+UF+UV LED in storage tank. Digital Display of Purity and Minerals shows purified water quality, filter life, RO flow rate, and more. Leemart constantly provides pure, healthy drinking water.",
       href: "ro-water-purifiers",
       img: "ro-water-purifier.png"
     },
     {
       label: "UV Water Purifiers",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam alias quam hic corrupti quod iure fugiat sunt suscipit nemo accusamus ipsum cumque a similique recusandae placeat adipisci dolore voluptatum eveniet odit ut vero perspiciatis! Aliquam et ex eius tempore, quaerat laboriosam culpa animi, eum reprehenderit vero exercitationem facere quos iste esse temporibus non?",
+      description: "Modern ultraviolet water purifiers from Leemart are easy to use, totally remove tastes and smells from water, and don't affect the water's quality. Ultrafiltration (UF) and ultraviolet (UV) membranes are installed in these purifiers in order to rid the water of dangerous bacteria, viruses, and cysts.",
       href: "ro-water-purifiers",
       img: "ro-water-purifier.png"
     },
     {
       label: "Commercial Water Purifiers",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam alias quam hic corrupti quod iure fugiat sunt suscipit nemo accusamus ipsum cumque a similique recusandae placeat adipisci dolore voluptatum eveniet odit ut vero perspiciatis! Aliquam et ex eius tempore, quaerat laboriosam culpa animi, eum reprehenderit vero exercitationem facere quos iste esse temporibus non?",
+      description: "Introduce AquaClear Industrial Water Purifiers: Design for Efficiency and Purity. Our durable systems produce high-quality water that meets industrial standards. AquaClear optimizes performance in many industrial environments using innovative filtration and purification technologies. AquaClear provides clean, safe water to protect your operations and boost productivity.",
       href: "ro-water-purifiers",
       img: "ro-water-purifier.png"
     },
     {
       label: "Water Softeners",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam alias quam hic corrupti quod iure fugiat sunt suscipit nemo accusamus ipsum cumque a similique recusandae placeat adipisci dolore voluptatum eveniet odit ut vero perspiciatis! Aliquam et ex eius tempore, quaerat laboriosam culpa animi, eum reprehenderit vero exercitationem facere quos iste esse temporibus non?",
+      description: "AquaSoft sophisticated water softeners eliminate hard water concerns. Get rid of hard water limescale, dry skin, and dull hair. Our cutting-edge technology eliminates calcium and magnesium, making water wonderfully soft and mild on skin and hair. AquaSoft softens clothes, cleans dishes, and prolongs appliances. AquaSoft water softeners enhance life.",
       href: "ro-water-purifiers",
       img: "ro-water-purifier.png"
     }
@@ -84,64 +84,64 @@ export const uspList = [
       img: "/img/filtration.png",
       title: "Ultra-Pure Filtration",
       color:"bg-red-500",
-      content: "Experience the highest level of water purity with our cutting-edge RO water purifier. Utilising state-of-the-art filtration technology, it effectively eliminates even the most minuscule impurities, resulting in pristine drinking water that is crystal-clear and refreshing."
+      content: "Experience ultrapure water with our cutting-edge RO water purifier. It produces crystal-clear, pleasant drinking water by removing even the smallest contaminants with cutting-edge filtering technology."
     },
     {
       img: "/img/functionality.png",
       title: "Smart Design, Sleek Functionality",
       color:"bg-green-500",
-      content: "Our RO water purifiers are expertly crafted to effortlessly blend into any kitchen, combining elegant design with exceptional filtration capabilities. Experience the perfect balance of beauty and functionality."
+      content: "Elegant appearance and superior filtration make our RO water purifiers integrate into any kitchen. Enjoy the ideal blend of form and function."
     },
     {
       img: "/img/health.png",
       title: "Healthier Living",
       color:"bg-yellow-500",
-      content: "With every sip, our RO water purifiers provide peace of mind, delivering water that is free from contaminants, bacteria, and harmful chemicals, promoting a healthier lifestyle for you and your family."
+      content: "Our RO water purifiers produce clean, chemical-free water that is free of impurities and bacteria, so you and your family may live healthier lives with every sip."
     },
     {
       img: "/img/sustainable.png",
       title: "Sustainable Solution",
       color:"bg-blue-500",
-      content: "Embracing eco-conscious practices, our RO water purifiers are engineered for sustainability, minimizing water wastage while maximizing purification efficiency, contributing to a cleaner, greener future."
+      content: "Our RO water purifiers, which embrace environmentally responsible techniques, are designed to be sustainable. They reduce water waste while optimizing purifying effectiveness, helping to create a cleaner, greener future."
     },
     {
       img: "/img/performance.png",
       title: "Trusted Performance",
       color:"bg-purple-500",
-      content: "Backed by years of expertise and innovation, our RO water purifiers offer reliable performance, earning the trust of countless households worldwide for their consistent quality and effectiveness."
+      content: "With years of experience and invention behind us, our RO water purifiers deliver dependable performance, winning over many homes all over the world with their dependable quality and efficacy."
     },
     {
       img: "/img/customer.png",
       title: "Customer-Centric Excellence",
       color:"bg-cyan-500",
-      content: "From installation to maintenance, our dedicated customer support ensures a hassle-free experience, providing prompt assistance and guidance every step of the way, because your satisfaction is our priority."
+      content: "Your pleasure is our top goal, so we guarantee a hassle-free experience from installation to maintenance by offering timely assistance and guidance every step of the way."
     }
   ]
   
 export const reviews =[
     {
      name:"Sara Gupta",
-     comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae repellendus nisi ullam similique architecto, molestias tempora sunt",
+     comment:"I like this water purifier's elegance and efficiency! The purified water tastes better and was straightforward to install. A great family wellness investment!",
      provider:"google-icn" 
     },
     {
       name:"Revi Teja",
-      comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae repellendus nisi ullam similique architecto, molestias tempora sunt",
+      comment:"This water purifier impressed me! The digital display makes water quality monitoring straightforward, and multi-stage filtration eliminates contaminants. Strongly advised!",
       provider:"trustpilot" 
      },
      {
       name:"Simran Kaur",
-      comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae repellendus nisi ullam similique architecto, molestias tempora sunt",
+      comment:"After installing this water purifier, the taste changed. No chlorine taste or smell. Furthermore, the tiny size suits our kitchen. Worth every penny!",
       provider:"reviews-io" 
      },
      {
       name:"Ankit Taneja",
-      comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae repellendus nisi ullam similique architecto, molestias tempora sunt",
+      comment:"After a few weeks, this water purifier is working well. It always removes contaminants and provides cool, clean water. It overhauls our hydration routine.",
       provider:"google-icn" 
      },
      {
       name:"Kunal Bansal",
-      comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae repellendus nisi ullam similique architecto, molestias tempora sunt",
+      comment:"Leemart water purifier is useful! Due to its high flow rate and sophisticated purification technology, we never run out of clean water even during high usage. Additionally, filter replacement is simple. I love my purchase!",
       provider:"google-icn" 
      },
   ]

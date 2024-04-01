@@ -5,7 +5,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-star",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19249
+        productPrice: 19249,
+        productCategory:'RO'
     },
     {
         productName:"B",
@@ -13,7 +14,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-star-b",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24500
+        productPrice: 24500,
+        productCategory:'RO'
     },
     {
         productName:"C",
@@ -21,7 +23,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-plus",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20900
+        productPrice: 20900,
+        productCategory:'RO'
     },
     {
         productName:"D",
@@ -29,7 +32,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-plus-b",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 25000
+        productPrice: 25000,
+        productCategory:'UV'
     },
     {
         productName:"E",
@@ -37,7 +41,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-prime-plus",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 18650
+        productPrice: 18650,
+        productCategory:'RO'
     },
     {
         productName:"F",
@@ -45,7 +50,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-prime-star-b",
         productFeature: "Wall Mountable\nRO + UF + TDS Control\n+UV In-tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24000
+        productPrice: 24000,
+        productCategory:'COMMERCIAL'
     },
     {
         productName:"G",
@@ -53,7 +59,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-pearl-star",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ Detachable Tank + Digital Display | Flow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19650
+        productPrice: 19650,
+        productCategory:'UV'
     },
     {
         productName:"H",
@@ -61,7 +68,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-pearl",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ Detachable Tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 23000
+        productPrice: 23000,
+        productCategory:'RO'
     },
     {
         productName:"I",
@@ -69,7 +77,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-lite",
         productFeature: "Wall Mountable\nRO + UF + TDS Control\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24500
+        productPrice: 24500,
+        productCategory:'UV'
     },
     {
         productName:"J",
@@ -77,7 +86,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace",
         productFeature: "Wall Mountable\nRO + UF + TDS Control\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20900
+        productPrice: 20900,
+        productCategory:'COMMERCIAL'
     },
     {
         productName:"K",
@@ -85,7 +95,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-plus",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 23500
+        productPrice: 23500,
+        productCategory:'RO'
     },
     {
         productName:"M",
@@ -93,7 +104,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-alkaline",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Alkaline\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19900
+        productPrice: 19900,
+        productCategory:'RO'
     },
     {
         productName:"N",
@@ -101,7 +113,8 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-copper",
         productFeature: "Wall Mountable\nRO + UV + UF + Copper\n+ TDS Control + UV In-tank\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 25000
+        productPrice: 25000,
+        productCategory:'COMMERCIAL'
     },
     {
         productName:"P",
@@ -109,6 +122,7 @@ export const productData = [
         propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-star",
         productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
         productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20000
+        productPrice: 20000,
+        productCategory:'RO'
     }
 ]

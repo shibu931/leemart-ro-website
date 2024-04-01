@@ -18,16 +18,18 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 const page = ({ params }) => {
     const title = params.slug.toUpperCase().replaceAll('-', ' ')
-    const [productList, setProductList] = useState(productData)
+    const [productList, setProductList] = useState(productData.filter(product=>{if(product.productCategory.includes(title.trim().split(/\s+/)[0])){ return true} return false  }))
     const [price, setPrice] = useState(26000)
     const [installationTypeFilters, setInstallationTypeFilters] = useState([]);
     const [purificationTechnologyFilters, setPurificationTechnologyFilters] = useState([]);
     const [roFeaturesFilters, setRoFeaturesFilters] = useState([]);
     const [sortBy, setSortBy] = useState(null);
 
+    console.log(productList);
+
     // Function to filter products based on selected filters
     const filterProducts = () => {
-        let filteredProducts = productData.filter(product => {
+        let filteredProducts = productList.filter(product => {
             if (product.productPrice > price) return false;
 
             if (installationTypeFilters.length > 0 && !installationTypeFilters.includes(product.installationType)) return false;
@@ -67,8 +69,9 @@ const page = ({ params }) => {
     }, [price, installationTypeFilters, purificationTechnologyFilters, roFeaturesFilters]);
 
     useEffect(() => {
-        setProductList(sortProducts(productData));
+        setProductList(sortProducts(productList));
     }, [sortBy]);
+
 
     return (
         <section className='my-0'>
@@ -108,7 +111,7 @@ const page = ({ params }) => {
                                 <Slider defaultValue={[15000]} onValueChange={(value) => { setPrice(value) }} min={5000} max={26000} step={1} />
                                 <span className='font-medium text-md text-gray-500 block mt-2'>₹5000 - ₹{price}</span>
                             </div>
-                            <hr />
+                            {/* <hr />
                             <div className="">
                                 <Accordion type="single" collapsible>
                                     <AccordionItem value="item-1">
@@ -227,7 +230,7 @@ const page = ({ params }) => {
                                         </AccordionContent>
                                     </AccordionItem>
                                 </Accordion>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className='md:col-span-8 lg:col-span-9'>

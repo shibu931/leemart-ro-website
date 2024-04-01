@@ -14,15 +14,15 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2">
             <div className="my-auto text-center">
-              <h1 className="text-4xl lg:text-5xl leading-tight font-semibold">Welcome to Leemart<br /> <span className="lg:text-4xl text-3xl">Your Source for Pure, Refreshing Water</span></h1>
-              <p className="lg:text-center mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium rerum inventore illum mollitia officia libero commodi nisi nam velit quia vel fugit culpa quis aspernatur amet</p>
+              <h1 className="text-4xl lg:text-5xl leading-tight font-semibold">Welcome to Leemart<br /> We Care About Your Health</h1>
+              <p className="lg:text-center mt-4 text-justify">Leemart is a dedication to health and purity, not just a water cleaner. Leemart's cutting-edge filtration technology ensures that every drop of water is pure and safe to drink by eliminating pollutants, bacteria, and other impurities. Leemart provides pure water that improves your life with each drink. Take one glass at a time and discover the difference in purity by putting your family's health in the hands of Leemart.</p>
               <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-8">
                 <div className="mx-auto">
                   <div className="border rounded-lg bg-white/5 border-white/20 shadow-sm shadow-white/20 p-2 flex">
                     <Image className="me-2 w-[45px] h-[45px]" src="/img/google.webp" width={50} height={50} alt="Google" />
                     <div >
                       <p className="text-lg font-normal text-left">Google</p>
-                      <span className="font-bold">4.5/5
+                      <span className="font-bold">4.2/5
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
@@ -103,7 +103,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="mb-4 text-2xl font-extrabold text-blue-900">{item.label}</h3>
-                      <p className="mb-4">{item.description}</p>
+                      <p className="mb-4 text-gray-600">{item.description}</p>
                       <Button className="bg-blue-500 border hover:bg-blue-600 border-blue-400/20"><Link href={item.href}>View Products</Link></Button>
                     </div>
                     <div className="mx-auto hidden lg:block">
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="mb-3 text-blue-900 font-extrabold text-2xl">Ro Water Purifier Service's</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eum. Officia a libero suscipit laboriosam labore minima placeat! Accusantium quia dolorum similique accusamus eveniet, sint pariatur corrupti reprehenderit illum, laborum ullam eos velit aut sunt inventore dolor doloremque ut magnam? Rerum, obcaecati nam. Minima ut laudantium similique harum quae! Neque tempora, earum id temporibus ea illum magni distinctio sit! Iure?</p>
+                <p>Our RO Water Purifier Service provides expert maintenance, repairs, and filter replacements to keep your system running smoothly. Our trained technicians keep your water purifier working smoothly for constant access to clean, pure water. Every visit brings peace of mind as we emphasize your family's health and well-being with excellence. We provide customized service for routine maintenance and unexpected situations. Experience the difference with our dedicated RO water purifier servicing, keeping your system efficient for years.</p>
                 <Button className="bg-blue-500 hover:bg-blue-600 mt-5">
                   <Link href="/services/ro-water-purifier-service">Learn More</Link>
                 </Button>
@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="mb-3 text-blue-900 font-extrabold text-2xl">Industrial Water Plant Service's</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eum. Officia a libero suscipit laboriosam labore minima placeat! Accusantium quia dolorum similique accusamus eveniet, sint pariatur corrupti reprehenderit illum, laborum ullam eos velit aut sunt inventore dolor doloremque ut magnam? Rerum, obcaecati nam. Minima ut laudantium similique harum quae! Neque tempora, earum id temporibus ea illum magni distinctio sit! Iure?</p>
+                <p>Unmatched Efficiency with Our Industrial Water Purifier Plant Service. Our experienced technicians maintain, repair, and improve your water filtration plant for optimal performance and industry compliance. We give timely solutions adapted to your plant's unique needs to ensure operational continuity. Trust our devoted team to maintain your plant from routine maintenance to emergency help. We protect your production processes and quality with sustainability and reliability. Improve your industrial water purification system with our skilled service for uninterrupted operations and peace of mind.</p>
                 <Button className="bg-blue-500 hover:bg-blue-600 mt-5">
                   <Link href="/services/ro-water-purifier-service">Learn More</Link>
                 </Button>

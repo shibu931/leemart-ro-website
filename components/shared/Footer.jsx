@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
           <div>
             <Link href="/" className='focus:outline-none focus:bg-blue-300/50 rounded-sm text-3xl'>Leemart</Link>
-            <p className='mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum veritatis consectetur iure quod, minima modi repellendus debitis. Nobis, fuga natus?</p>
+            <p className='mt-4'>Leemart removes impurities, contaminants, and bacteria, ensuring every drop of water is clean and safe for consumption. </p>
             <ul className='flex mt-4'>
               <li className='mx-2'>
                 <Link href="#"><Image src="/img/facebook.svg" width={30} height={30} alt="facebook" /></Link>
