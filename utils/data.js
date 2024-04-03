@@ -1,128 +1,134 @@
 export const productData = [
     {
-        productName:"A",
-        // productName: "KENT Grand Star",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-star",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19249,
+        productName:"Leemart Nine Ro Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "7 Stage - RO + UV + mTDS + Alkaline + Sediment + Carbon + Prefilte",
+            "10L Storage Tank",
+            "Suitable for borewell, tanker, municipal water "
+        ],
+        productImage: "/img/products/Leemart_9.png",
+        productPrice: 15000,
         productCategory:'RO'
     },
     {
-        productName:"B",
-        // productName: "KENT Grand Star-B",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-star-b",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24500,
+        productName:"Leemart Glocy Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "RO+UV, Alkaline Water Purifier",
+            "12 to 15 Liter Water Tank",
+            "B12 Technology",
+            "Leemart Antioxidant Alkaline RO+UV filter For Home and Offices"
+        ],
+        productImage: "/img/products/Leemart_glocy.png",
+        productPrice: 13500,
         productCategory:'RO'
     },
     {
-        productName:"C",
-        // productName: "KENT Grand plus",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-plus",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20900,
+        productName:"Leemart Fly Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "RO + UV + Alkaline",
+            "10L Storage Capacity",
+            "Transparent Water Tank"
+        ],
+        productImage: "/img/products/Leemart_Fly.png",
+        productPrice: 9500,
         productCategory:'RO'
+        
     },
     {
-        productName:"D",
-        // productName: "KENT Grand Plus-B",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-grand-plus-b",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 25000,
-        productCategory:'UV'
-    },
-    {
-        productName:"E",
-        // productName: "KENT Prime Plus",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-prime-plus",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 18650,
+        productName:"Leemart Apple Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "12L Storage Capacity",
+            "Attractive Look",
+            "RO + UV Alkaline"
+        ],
+        productImage: "/img/products/Leemart_aapple.png",
+        productPrice: 12500,
         productCategory:'RO'
+
     },
     {
-        productName:"F",
-        // productName: "KENT Prime Star B",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-prime-star-b",
-        productFeature: "Wall Mountable\nRO + UF + TDS Control\n+UV In-tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24000,
-        productCategory:'COMMERCIAL'
-    },
-    {
-        productName:"G",
-        // productName: "KENT Pearl Star",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-pearl-star",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ Detachable Tank + Digital Display | Flow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19650,
-        productCategory:'UV'
-    },
-    {
-        productName:"H",
-        // productName: "KENT Pearl",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-pearl",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ Detachable Tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 23000,
+        productName:"Leemart L Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "10L Storage Tank",
+            "Classy Look",
+            "RO + UV + Alkaline",
+            "Heavy Build Quality"
+        ],
+        productImage: "/img/products/leemart_l_pure.png",
+        productPrice: 14500,
         productCategory:'RO'
+
     },
     {
-        productName:"I",
-        // productName: "KENT Ace Lite",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-lite",
-        productFeature: "Wall Mountable\nRO + UF + TDS Control\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 24500,
-        productCategory:'UV'
-    },
-    {
-        productName:"J",
-        // productName: "KENT Ace",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace",
-        productFeature: "Wall Mountable\nRO + UF + TDS Control\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20900,
-        productCategory:'COMMERCIAL'
-    },
-    {
-        productName:"K",
-        // productName: "KENT Ace Plus",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-plus",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 23500,
+        productName:"Leemart 7 Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Under The Sink Fit",
+            "RO + UV + Alkaline",
+            "10L Storage Tank Capacity",
+            "Easy to Install, Comes with Chrome Top"
+        ],
+        productImage: "/img/products/leemart_7.png",
+        productPrice: 15000,
         productCategory:'RO'
+
     },
     {
-        productName:"M",
-        // productName: "KENT Ace Alkaline",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-alkaline",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Alkaline\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 19900,
+        productName:"Leemart Crome Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "12L Storage Capacity",
+            "RO + UV + Alkaline",
+            "Strong Build Quality",
+            "Easy To Install"
+        ],
+        productImage: "/img/products/leemart_crome.png",
+        productPrice: 12500,
         productCategory:'RO'
+
     },
     {
-        productName:"N",
-        // productName: "KENT Ace Copper",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-copper",
-        productFeature: "Wall Mountable\nRO + UV + UF + Copper\n+ TDS Control + UV In-tank\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 25000,
-        productCategory:'COMMERCIAL'
-    },
-    {
-        productName:"P",
-        // productName: "KENT Ace Star",
-        propertyName1_link: "https://www.kent.co.in/water-purifiers/ro/kent-ace-star",
-        productFeature: "Wall Mountable\nRO + UV + UF + TDS Control\n+ UV In-tank + Digital Display\nFlow Rate 20L/hr",
-        productImage: "https://www.kent.co.in/images/png/KENT-Grand-Star-400x400px.png",
-        productPrice: 20000,
+        productName:"Leemart Cruzze Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Attractive Look",
+            "RO + UV + Alkaline Water Purifer",
+            "12L Water Storage Capcity",
+            "Z Black Color"
+        ],
+        productImage: "/img/products/leemart_cruzze.png",
+        productPrice: 14999,
         productCategory:'RO'
-    }
+
+    },
+    {
+        productName:"Leemart Robo Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Unique Attractive Water Purifier",
+            "10 L Water Storage Tank Capacity",
+            "Premium Ro Body",
+            "Multiple Colour Options"
+        ],
+        productImage: "/img/products/leemart_robo.png",
+        productPrice: 19999,
+        productCategory:'RO'
+
+    },
+
+    
 ]

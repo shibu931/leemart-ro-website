@@ -234,7 +234,7 @@ const page = ({ params }) => {
                         </div>
                     </div>
                     <div className='md:col-span-8 lg:col-span-9'>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
                             {
                                 productList.map((product) => (
                                     <div className="rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6">
