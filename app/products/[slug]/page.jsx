@@ -18,7 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 const page = ({ params }) => {
     const title = params.slug.toUpperCase().replaceAll('-', ' ')
-    const [productList, setProductList] = useState(productData.filter(product=>{if(product.productCategory.includes(title.trim().split(/\s+/)[0])){ return true} return false  }))
+    const [productList, setProductList] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
     const [price, setPrice] = useState(26000)
     const [installationTypeFilters, setInstallationTypeFilters] = useState([]);
     const [purificationTechnologyFilters, setPurificationTechnologyFilters] = useState([]);
@@ -77,12 +77,12 @@ const page = ({ params }) => {
         <section className='my-0'>
             <Header title={title} />
             <div className='py-10 container'>
-                <div className="grid md:grid-cols-12 gap-4 lg:gap-10 relative">
+                <div className="grid md:grid-cols-12 gap-4 lg:gap-8 relative">
                     <div className='md:col-span-4 lg:col-span-3 '>
                         <div className='filters-drawer md:px-5 lg:px-8'>
                             <div className='mb-5'>
                                 <span className='font-medium text-lg block mb-3'>Sort By</span>
-                                <RadioGroup defaultValue="comfortable" onValueChange={(value)=>{handleSortChange(value)}}>
+                                <RadioGroup defaultValue="comfortable" onValueChange={(value) => { handleSortChange(value) }}>
                                     <div className="flex items-center justify-between">
                                         <Label className="font-normal" htmlFor="popularity">None</Label>
                                         <RadioGroupItem value="none" id="popularity" />
@@ -234,41 +234,60 @@ const page = ({ params }) => {
                         </div>
                     </div>
                     <div className='md:col-span-8 lg:col-span-9'>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
                             {
                                 productList.map((product) => (
                                     <div className="rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6">
-                                        <div className='mb-8'><h4 className='mb-3 font-medium text-xl'>{product.productName}</h4>
-                                            <p className='text-gray-700 h-[50px] overflow-hidden'>{product.productFeature}</p>
-                                            <Image
-                                                src={product.productImage}
-                                                width={200}
-                                                height={260}
-                                                alt={product.name}
-                                                className='mx-auto'
-                                            /></div>
-                                        <div className='text-center my-2'>  
-                                            <p className='font-medium'>MRP : ₹{product.productPrice}</p>
-                                        </div>
-                                        <div className='flex mt-auto'>
-                                            <Link href="#" className='bg-blue-800 w-2/4  mx-2 rounded-md text-white font-medium p-2'>View</Link>
-                                            <Link href="#" className='bg-black w-1/4  mx-2 rounded-md text-white font-medium p-2'>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                            <div className='p-5'>
                                                 <Image
-                                                    src="/img/flipkart-logo.png"
-                                                    width={20}
-                                                    height={20}
-                                                    alt='Flipkart Logo'
-                                                    className='w-5 h-5 mx-auto'
+                                                    src={product.productImage}
+                                                    width={200}
+                                                    height={260}
+                                                    alt={product.name}
+                                                    className='mx-auto'
                                                 />
-                                            </Link>
-                                            <Link href="#" className='bg-gray-300 border border-gray-600 w-1/4  mx-2 rounded-md text-white font-medium p-2'><Image
-                                                src="/img/amazon-icon.svg"
-                                                width={20}
-                                                height={20}
-                                                alt='amazon Logo'
-                                                className='w-5 h-5 m-auto'
-                                            /></Link>
+                                            </div>
+                                            <div className='h-full'>
+                                                <div className='mb-4'>
+                                                    <h4 className='mb-3 font-semibold text-left text-lg'>{product.productName}</h4>
+                                                    <ul className='text-left text-md list-disc'>
+                                                        {
+                                                            product.productFeature.map((feature,index)=>(
+                                                                <li key={index}>{feature}</li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                </div>
+                                                <div className='my-2'>
+                                                    <p className='font-semibold text-left'>MRP : ₹{product.productPrice}</p>
+                                                </div>
+                                                <div className='flex mt-3'>
+                                                    {/* <Link href="#" className='bg-blue-800 w-2/4  mx-2 rounded-md text-white font-medium p-2'>View</Link> */}
+                                                    <Link href="#" className='bg-blue-500 hover:bg-blue-600 focus:bg-blue-500 border-blue-700 border me-2 rounded-md text-white font-medium p-2'>
+                                                        Buy On
+                                                        <Image
+                                                            src="/img/flipkart-logo.png"
+                                                            width={20}
+                                                            height={20}
+                                                            alt='Flipkart Logo'
+                                                            className='inline ms-2'
+                                                        />
+                                                    </Link>
+                                                    <Link href="#" className='bg-gray-300 hover:bg-gray-400 focus:bg-gray-400 border border-gray-600 rounded-md text-black font-medium p-2'>
+                                                        Buy On
+                                                        <Image
+                                                            src="/img/amazon-icon.svg"
+                                                            width={20}
+                                                            height={20}
+                                                            alt='amazon Logo'
+                                                            className='inline ms-2'
+                                                        />
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </div>
+
                                     </div>
                                 ))
                             }
