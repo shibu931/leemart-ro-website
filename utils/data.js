@@ -129,6 +129,38 @@ export const productData = [
         productCategory:'RO'
 
     },
+    {
+        productName:"Leemart Flint Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Digital Panel",
+            "Attractive Look",
+            "Purify 99.9% Bacteria",
+            "Comes with RO+UV+Alkaline",
+            "10L Storage Capacity"
+        ],
+        productImage: "/img/products/leemart_flint.png",
+        productPrice: 16000,
+        productCategory:'RO'
+
+    },
+    {
+        productName:"Leemart Qurd Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Digital Panel",
+            "Attractive Look",
+            "Purify 99.9% Bacteria",
+            "Comes with RO+UV+Alkaline",
+            "10L Storage Capacity"
+        ],
+        productImage: "/img/products/leemart_qurd.png",
+        productPrice: 11999,
+        productCategory:'RO'
+
+    },
 
     
 ]
