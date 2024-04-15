@@ -31,14 +31,113 @@ const page = () => {
         </div>
         <div className="mt-10">
           <h3 className="text-center text-3xl font-semibold mb-8">Our Reputeted Customers</h3>
-          <div className="flex flex-wrap justify-content-center bg-white p-4 rounded-lg shadow">
-            <div className='w-1/4'>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 bg-white p-4 rounded-lg shadow">
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
               <Image
-                src='/img/AIIMS_LOGO.png'
-                width={300}
-                height={150}
+                src='/img/clients/client001.jpg'
+                width={200}
+                height={200}
+                alt='Bal Bhavan'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client002.png'
+                width={200}
+                height={200}
                 alt='AIIMS Logo'
-                className='w-fulll'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client003.jpeg'
+                width={200}
+                height={200}
+                alt='AIIMS Logo'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client004.jpeg'
+                width={200}
+                height={200}
+                alt='Baptist Convent Sr Sec. School'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client005.png'
+                width={200}
+                height={200}
+                alt='polex International'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client006.jpeg'
+                width={200}
+                height={200}
+                alt='St Stephens School'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client007.png'
+                width={200}
+                height={200}
+                alt='Nestor Pharmaceuticals Ltd'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client008.jpeg'
+                width={200}
+                height={200}
+                alt='PWD Delhi Gov'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client009.png'
+                width={200}
+                height={200}
+                alt='Ministry Of Rural Development'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client010.png'
+                width={200}
+                height={200}
+                alt='Lok Nayak Hospital'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client011.jpg'
+                width={200}
+                height={200}
+                alt='Muncipal Corporation Of Delhi'
+                className='w-full'
+              />
+            </div>
+            <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+              <Image
+                src='/img/clients/client012.jpg'
+                width={200}
+                height={200}
+                alt='Vardhman Shiksha Niketan'
+                className='w-full'
               />
             </div>
           </div>

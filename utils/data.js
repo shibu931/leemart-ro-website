@@ -161,6 +161,18 @@ export const productData = [
         productCategory:'RO'
 
     },
+    {
+        productName:"50 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/50.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+
+    },
 
     
 ]

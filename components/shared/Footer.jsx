@@ -43,10 +43,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className='lg:mx-auto'>
-            <h5 className='text-xl font-semibold mb-4'>Customer Support</h5>
+            <h5 className='text-xl font-semibold mb-4'>Contact Us</h5>
             <ul>
               <li className='mb-1 text-md hover:text-blue-200'><PhoneArrowDownLeftIcon class="h-4 w-4 text-white me-2 inline" />
-                  <a href="tel:+91123456789" className='focus:outline-none focus:bg-blue-300/50 rounded-sm'>+91 123456789</a></li>
+                  <a href="tel:+918076602998" className='focus:outline-none focus:bg-blue-300/50 rounded-sm'>+91 80766 02998</a></li>
               <li className='mb-1 text-md hover:text-blue-200'>
                 <EnvelopeIcon class="h-4 w-4 me-2 inline text-white" />
                 <a href="mailto:info@leemart.co.in" className='focus:outline-none focus:bg-blue-300/50 rounded-sm'>info@leemart.co.in</a>
