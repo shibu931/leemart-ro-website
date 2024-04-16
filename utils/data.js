@@ -171,7 +171,72 @@ export const productData = [
         productImage: "/img/products/industrial/50.webp",
         productPrice: 11999,
         productCategory:'COMMERCIAL'
-
+    },
+    {
+        productName:"100 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/100.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+    },
+    {
+        productName:"500 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/500.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+    },
+    {
+        productName:"1000 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/1000.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+    },
+    {
+        productName:"2000 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/2000.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+    },
+    {
+        productName:"5000 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/5000.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
+    },
+    {
+        productName:"10000 LPH Water Purifier",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Automated",
+        ],
+        productImage: "/img/products/industrial/10000.webp",
+        productPrice: 11999,
+        productCategory:'COMMERCIAL'
     },
 
     

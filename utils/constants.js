@@ -24,18 +24,18 @@ export const navItems = [
     },
     {
         label: "Services",
-        href: "/services",
-        img:"menu-service-img.jpg",
-        subMenu:[
-            {
-                label: "Ro Water Purifiers",
-                href: "/services/ro-water-purifiers-servicing"
-            },
-            {
-                label: "Industrial Water Plant",
-                href: "/services/industrial-water-plant-servicing"
-            },
-        ]
+        href: "/services/ro-water-purifiers-servicing",
+        // img:"menu-service-img.jpg",
+        // subMenu:[
+        //     {
+        //         label: "Ro Water Purifiers",
+        //         href: "/services/ro-water-purifiers-servicing"
+        //     },
+        //     {
+        //         label: "Industrial Water Plant",
+        //         href: "/services/industrial-water-plant-servicing"
+        //     },
+        // ]
     },
     // {
     //     label: "Blogs",
@@ -145,3 +145,31 @@ export const reviews =[
       provider:"google-icn" 
      },
   ]
+
+export const faqs=[
+  {
+    id:'item-1',
+    title:'What distinguishes Leemart water purifiers from competing models on the market?',
+    content:'Modern filtration technology used in the construction of Leemart water purifiers guarantees the elimination of impurities while preserving necessary minerals, giving you clean, healthy drinking water. We differentiate ourselves from the competition by our dedication to quality and innovation.'
+  },
+  {
+    id:'item-2',
+    title:'How frequently should the filters in my Leemart water purifier be changed?',
+    content:'The frequency of filter change is dependent on a number of variables, including use and water quality. We advise changing the filters every six to twelve months as a general rule to preserve water quality and performance. For comprehensive instructions, please consult your product manual as certain models might require special considerations.'
+  },
+  {
+    id:'item-3',
+    title:'Are installing and maintaining Leemart water purifiers simple tasks?',
+    content:'Indeed, Leemart water purifiers are made to be simple to install and maintain. Our products include thorough installation instructions, and changing the filter is an easy process. Furthermore, our customer service representatives are always on hand to help with any queries or worries you might have.'
+  },
+  {
+    id:'item-4',
+    title:'Do fluoride and other dangerous compounds get rid of water with Leemart water purifiers?',
+    content:'Indeed, the sophisticated filtration technology found in Leemart water purifiers allows for the efficient removal of a variety of impurities, including as lead, chlorine, fluoride, and other dangerous substances. We put our filtration systems through a comprehensive testing process to make sure they live up to the highest water quality and safety standards.'
+  },
+  {
+    id:'item-5',
+    title:'Are Leemart water purifiers covered by a warranty, and if so, what is covered under it?',
+    content:'In order to guarantee client happiness and peace of mind, Leemart does, in fact, offer a warranty on all of our water purifiers. Within a certain time frame from the date of purchase, manufacturing flaws and malfunctions are usually covered by warranties. For information on the terms and conditions of the warranty that apply to your model, please consult the product documentation or get in touch with our customer service staff.'
+  },
+]

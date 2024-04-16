@@ -18,6 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 const page = ({ params }) => {
     const title = params.slug.toUpperCase().replaceAll('-', ' ')
+    const [defaultProducts,setDefaultProducts] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
     const [productList, setProductList] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
     const [price, setPrice] = useState(26000)
     const [installationTypeFilters, setInstallationTypeFilters] = useState([]);
@@ -25,11 +26,10 @@ const page = ({ params }) => {
     const [roFeaturesFilters, setRoFeaturesFilters] = useState([]);
     const [sortBy, setSortBy] = useState(null);
 
-    console.log(productList);
 
     // Function to filter products based on selected filters
     const filterProducts = () => {
-        let filteredProducts = productList.filter(product => {
+        let filteredProducts = defaultProducts.filter(product => {
             if (product.productPrice > price) return false;
 
             if (installationTypeFilters.length > 0 && !installationTypeFilters.includes(product.installationType)) return false;
@@ -108,7 +108,7 @@ const page = ({ params }) => {
                             <hr />
                             <div className='mb-5'>
                                 <span className='font-medium text-lg block mb-3'>Filter By Price</span>
-                                <Slider defaultValue={[15000]} onValueChange={(value) => { setPrice(value) }} min={5000} max={26000} step={1} />
+                                <Slider defaultValue={[26000]} onValueChange={(value) => { setPrice(value) }} min={5000} max={26000} step={1} />
                                 <span className='font-medium text-md text-gray-500 block mt-2'>₹5000 - ₹{price}</span>
                             </div>
                             {/* <hr />

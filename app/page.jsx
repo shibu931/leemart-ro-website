@@ -3,7 +3,8 @@ import { StarIcon } from "@heroicons/react/24/solid";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import CarouselCard from "@/components/shared/CarouselCard";
-import { homeCatalog, reviews, uspList } from "@/utils/constants";
+import { homeCatalog, reviews, uspList,faqs } from "@/utils/constants";
+import FaqAccordion from "@/components/shared/FaqAccordion";
 
 
 export default function Home() {
@@ -221,6 +222,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-8 mt-10">
             <div className="lg:col-span-6 lg:col-start-2">
               <CarouselCard reviews={reviews} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <h2 className="text-center text-3xl">Frequently Asked Question's</h2>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 lg:gap-10">
+            <div className="md:col-span-5 lg:col-span-5">
+              <Image
+                src="/img/FAQs.svg"
+                width={400}
+                height={400}
+                className="w-full lg:ms-5"
+                alt="Faqs"
+              />
+            </div>
+            <div className="md:col-span-7 lg:col-span-7 my-auto lg:px-4">
+              <FaqAccordion faqs={faqs}/>
             </div>
           </div>
         </div>
