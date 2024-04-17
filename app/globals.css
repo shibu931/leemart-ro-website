@@ -111,10 +111,10 @@ section{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--primary-background);
-  background-image: url('../public/img/form_bg.jpg');
+  background-color: rgba(52,87,213,.3);
+  /* background-image: url('../public/img/form_bg.jpg'); */
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(50px);
+  /* filter: blur(10px); */
 }
