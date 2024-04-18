@@ -14,11 +14,19 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Checkbox } from "@/components/ui/checkbox"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
 
 
 const page = ({ params }) => {
     const title = params.slug.toUpperCase().replaceAll('-', ' ')
-    const [defaultProducts,setDefaultProducts] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
+    const [defaultProducts, setDefaultProducts] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
     const [productList, setProductList] = useState(productData.filter(product => { if (product.productCategory.includes(title.trim().split(/\s+/)[0])) { return true } return false }))
     const [price, setPrice] = useState(26000)
     const [installationTypeFilters, setInstallationTypeFilters] = useState([]);
@@ -237,54 +245,99 @@ const page = ({ params }) => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
                             {
                                 productList.map((product) => (
-                                    <div className="rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                            <div className='p-5'>
+                                    <div className={`rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6 ${product.productPrice == '0' ? 'col-span-2':''}`}>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                            <div className='p-2'>
                                                 <Image
                                                     src={product.productImage}
                                                     width={200}
                                                     height={260}
                                                     alt={product.name}
-                                                    className='mx-auto'
+                                                    className={`mx-auto ${product.productPrice == '0' ? 'w-[300px]':''}`}
                                                 />
                                             </div>
                                             <div className='h-full'>
                                                 <div className='mb-4'>
                                                     <h4 className='mb-3 font-semibold text-left text-lg'>{product.productName}</h4>
-                                                    <ul className='text-left text-md list-disc'>
+                                                    <ul className='text-left text-sm list-disc ps-4'>
                                                         {
-                                                            product.productFeature.map((feature,index)=>(
-                                                                <li key={index}>{feature}</li>
+                                                            product.productFeature.map((feature, index) => (
+                                                                <li key={index} className='mb-1'>{feature}</li>
                                                             ))
                                                         }
                                                     </ul>
                                                 </div>
-                                                <div className='my-2'>
-                                                    <p className='font-semibold text-left'>MRP : ₹{product.productPrice}</p>
-                                                </div>
-                                                <div className='flex mt-3'>
-                                                    {/* <Link href="#" className='bg-blue-800 w-2/4  mx-2 rounded-md text-white font-medium p-2'>View</Link> */}
-                                                    <Link href="#" className='bg-blue-500 hover:bg-blue-600 focus:bg-blue-500 border-blue-700 border me-2 rounded-md text-white font-medium p-2'>
-                                                        Buy On
-                                                        <Image
-                                                            src="/img/flipkart-logo.png"
-                                                            width={20}
-                                                            height={20}
-                                                            alt='Flipkart Logo'
-                                                            className='inline ms-2'
-                                                        />
-                                                    </Link>
-                                                    <Link href="#" className='bg-gray-300 hover:bg-gray-400 focus:bg-gray-400 border border-gray-600 rounded-md text-black font-medium p-2'>
-                                                        Buy On
-                                                        <Image
-                                                            src="/img/amazon-icon.svg"
-                                                            width={20}
-                                                            height={20}
-                                                            alt='amazon Logo'
-                                                            className='inline ms-2'
-                                                        />
-                                                    </Link>
-                                                </div>
+                                                {
+                                                    product.productCategory == 'RO' ? (
+                                                        <>
+                                                            <div className='my-2'>
+                                                                <p className='font-semibold text-left'>MRP : ₹{product.productPrice}</p>
+                                                            </div>
+                                                            <div className='flex mt-3'>
+                                                                <Link href="#" className='bg-blue-500 hover:bg-blue-600 focus:bg-blue-500 border-blue-700 border me-2 rounded-md text-white font-medium p-2'>
+                                                                    Buy On
+                                                                    <Image
+                                                                        src="/img/flipkart-logo.png"
+                                                                        width={20}
+                                                                        height={20}
+                                                                        alt='Flipkart Logo'
+                                                                        className='inline ms-2'
+                                                                    />
+                                                                </Link>
+                                                                <Link href="#" className='bg-gray-300 hover:bg-gray-400 focus:bg-gray-400 border border-gray-600 rounded-md text-black font-medium p-2'>
+                                                                    Buy On
+                                                                    <Image
+                                                                        src="/img/amazon-icon.svg"
+                                                                        width={20}
+                                                                        height={20}
+                                                                        alt='amazon Logo'
+                                                                        className='inline ms-2'
+                                                                    />
+                                                                </Link>
+                                                            </div>
+                                                        </>
+                                                    ) :
+                                                        (
+                                                            <>
+                                                                <div className='flex mt-3'>
+                                                                    <Dialog>
+                                                                        <DialogTrigger className='bg-blue-800 mx-2 rounded-md text-white font-medium p-2'>Get A Quote</DialogTrigger>
+                                                                        <DialogContent>
+                                                                            <DialogHeader>
+                                                                                <DialogTitle>Request A Call Back</DialogTitle>
+                                                                                <DialogDescription>
+                                                                                    <form>
+                                                                                        <div className="mb-4">
+                                                                                            <label className="block text-blue-950 text-sm font-bold mb-2" for="name">
+                                                                                                Name
+                                                                                            </label>
+                                                                                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-blue-950 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter Your Name" />
+                                                                                        </div>
+                                                                                        <div className="mb-4">
+                                                                                            <label className="block text-blue-950 text-sm font-bold mb-2" for="number">
+                                                                                                Phone Number
+                                                                                            </label>
+                                                                                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-blue-950 leading-tight focus:outline-none focus:shadow-outline" id="number" type="tel" placeholder="Enter Your Phone Number" />
+                                                                                        </div>
+                                                                                        <div className="mb-4">
+                                                                                            <label htmlFor="message" className='block text-blue-950 text-sm font-bold mb-2'>Your Address</label>
+                                                                                            <textarea name="message" id="message" className='block shadow appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' rows="2" placeholder='Enter Your Address'></textarea>
+                                                                                        </div>
+                                                                                        <div className="flex items-center justify-between">
+                                                                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                                                                                                Submit
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </DialogDescription>
+                                                                            </DialogHeader>
+                                                                        </DialogContent>
+                                                                    </Dialog>
+
+                                                                </div>
+                                                            </>
+                                                        )
+                                                }
                                             </div>
                                         </div>
 

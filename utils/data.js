@@ -166,7 +166,10 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Fully Stainless Steel Body",
+            "Purification Technology : RO",
+            "50 Liter Per Hour , Two 150 Gpd Booster Pump , Four Pices Membrane And One Activated Carbon Filter",
+            "Max. Duty Cycle Per Day 500 Litre Suitable For Home , Office , Hotel , Restaurant, Cafe and Factory"
         ],
         productImage: "/img/products/industrial/50.webp",
         productPrice: 11999,
@@ -177,7 +180,10 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Multi stage water purification technology",
+            "Hi Quality US Import RO Membrane 4 pcs works up to 4000 tds",
+            "Stainless steel body with high performing 300 GPD booster pump",
+            "Wall Mounted Product no need extra Stand for Installation."
         ],
         productImage: "/img/products/industrial/100.webp",
         productPrice: 11999,
@@ -188,7 +194,9 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Automatic 500 LPH RO Plant Industrial Machine with Auto-flush Function",
+            "NSF Certified BW 4040 Reverse Osmosis Membrane 2 Nos",
+            "Maximum Duty cycle per day: 11000 Ltr or 22 Hours Operation"
         ],
         productImage: "/img/products/industrial/500.webp",
         productPrice: 11999,
@@ -199,7 +207,9 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Fully automatic RO water purifier with AUTO SHUT OFF Function",
+            "This filter removes objectionable Taste and Odors to enhance the quality of your drinking water.",
+            "Fully Stainless Steel Body With Two 100 GPD High Performance Copper Winded Booster Pump"
         ],
         productImage: "/img/products/industrial/1000.webp",
         productPrice: 11999,
@@ -210,7 +220,11 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Working Design Upto 18-20 hours",
+            "Pre-treatment to remove organic impurities and dissolved gases",
+            "Micron filtration to remove impurities up to 5 micron",
+            "Low operation Cost And long life span",
+            "Easy to control and maintain"
         ],
         productImage: "/img/products/industrial/2000.webp",
         productPrice: 11999,
@@ -221,7 +235,11 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Working Design Upto 18-20 hours",
+            "Pre-treatment to remove organic impurities and dissolved gases",
+            "Micron filtration to remove impurities up to 5 micron",
+            "Low operation Cost And long life span",
+            "Easy to control and maintain"
         ],
         productImage: "/img/products/industrial/5000.webp",
         productPrice: 11999,
@@ -232,10 +250,14 @@ export const productData = [
         propertyName1_link1: "",
         propertyName1_link2: "",
         productFeature: [
-            "Automated",
+            "Working Design Upto 18-20 hours",
+            "Pre-treatment to remove organic impurities and dissolved gases",
+            "Micron filtration to remove impurities up to 5 micron",
+            "Low operation Cost And long life span",
+            "Easy to control and maintain"
         ],
         productImage: "/img/products/industrial/10000.webp",
-        productPrice: 11999,
+        productPrice: 0,
         productCategory:'COMMERCIAL'
     },
 

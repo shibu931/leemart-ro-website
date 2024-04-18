@@ -12,10 +12,10 @@ export const navItems = [
                 label: "Ro Water Purifiers",
                 href: "/products/ro-water-purifiers"
             },
-            {
-                label: "UV Water Purifers",
-                href: "/products/uv-water-purifiers"
-            },
+            // {
+            //     label: "UV Water Purifers",
+            //     href: "/products/uv-water-purifiers"
+            // },
             {
                 label: "Industrial Water Plant",
                 href: "/products/commercial-water-purifiers"
@@ -57,26 +57,26 @@ export const homeCatalog = [
       label: "Ro Water Purifiers",
       description: "Thousands trust Leemart Water Purifiers, India's top brand, for pure water. Leemart promises the highest-quality water with breakthrough Mineral Purification technology and a multi-stage purification process includes RO+UV+UF+UV LED in storage tank. Digital Display of Purity and Minerals shows purified water quality, filter life, RO flow rate, and more. Leemart constantly provides pure, healthy drinking water.",
       href: "ro-water-purifiers",
-      img: "ro-water-purifier.png"
+      img: "/img/products/leemart_qurd.png"
     },
-    {
-      label: "UV Water Purifiers",
-      description: "Modern ultraviolet water purifiers from Leemart are easy to use, totally remove tastes and smells from water, and don't affect the water's quality. Ultrafiltration (UF) and ultraviolet (UV) membranes are installed in these purifiers in order to rid the water of dangerous bacteria, viruses, and cysts.",
-      href: "ro-water-purifiers",
-      img: "ro-water-purifier.png"
-    },
+    // {
+    //   label: "UV Water Purifiers",
+    //   description: "Modern ultraviolet water purifiers from Leemart are easy to use, totally remove tastes and smells from water, and don't affect the water's quality. Ultrafiltration (UF) and ultraviolet (UV) membranes are installed in these purifiers in order to rid the water of dangerous bacteria, viruses, and cysts.",
+    //   href: "ro-water-purifiers",
+    //   img: "ro-water-purifier.png"
+    // },
     {
       label: "Commercial Water Purifiers",
       description: "Introduce AquaClear Industrial Water Purifiers: Design for Efficiency and Purity. Our durable systems produce high-quality water that meets industrial standards. AquaClear optimizes performance in many industrial environments using innovative filtration and purification technologies. AquaClear provides clean, safe water to protect your operations and boost productivity.",
       href: "ro-water-purifiers",
-      img: "ro-water-purifier.png"
+      img: "/img/products/industrial/500.webp"
     },
-    {
-      label: "Water Softeners",
-      description: "AquaSoft sophisticated water softeners eliminate hard water concerns. Get rid of hard water limescale, dry skin, and dull hair. Our cutting-edge technology eliminates calcium and magnesium, making water wonderfully soft and mild on skin and hair. AquaSoft softens clothes, cleans dishes, and prolongs appliances. AquaSoft water softeners enhance life.",
-      href: "ro-water-purifiers",
-      img: "ro-water-purifier.png"
-    }
+    // {
+    //   label: "Water Softeners",
+    //   description: "AquaSoft sophisticated water softeners eliminate hard water concerns. Get rid of hard water limescale, dry skin, and dull hair. Our cutting-edge technology eliminates calcium and magnesium, making water wonderfully soft and mild on skin and hair. AquaSoft softens clothes, cleans dishes, and prolongs appliances. AquaSoft water softeners enhance life.",
+    //   href: "ro-water-purifiers",
+    //   img: "ro-water-purifier.png"
+    // }
   ]
   
 export const uspList = [

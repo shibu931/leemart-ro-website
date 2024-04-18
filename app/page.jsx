@@ -96,10 +96,10 @@ export default function Home() {
                   <div className="grid sm:grid-cols-2">
                   <div className="mx-auto lg:hidden block">
                       <Image
-                        src={`/img/${item.img}`}
-                        width={320}
+                        src={item.img}
+                        width={260}
                         height={300}
-                        alt="ro-water-purifier"
+                        alt={item.label}
                       />
                     </div>
                     <div>
@@ -109,10 +109,10 @@ export default function Home() {
                     </div>
                     <div className="mx-auto hidden lg:block">
                       <Image
-                        src={`/img/${item.img}`}
-                        width={320}
+                        src={item.img}
+                        width={260}
                         height={300}
-                        alt="ro-water-purifier"
+                        alt={item.label}
                       />
                     </div>
                   </div>
@@ -155,10 +155,11 @@ export default function Home() {
             <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5 mt-5">
             <div className="mx-auto">
                 <Image
-                  src="/img/industrial_plant.png"
-                  width={350}
-                  height={350}
+                  src="/img/products/industrial/10000.webp"
+                  width={450}
+                  height={450}
                   alt="industrial plant"
+                  className="w-full"
                 />
               </div>
               <div>
