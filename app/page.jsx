@@ -65,13 +65,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="lg:px-10 lg:pb-10 lg:pt-16">
               <Image
-                src="/img/banner-ro.png"
-                width={320}
-                height={380}
+                src="/img/banner-ro.webp"
+                width={808}
+                height={476}
                 alt="ro-water-purifier"
-                className="w-full md:w-4/6 m-auto"
+                className="w-full m-auto"
               />
             </div>
           </div>

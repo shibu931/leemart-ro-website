@@ -11,7 +11,10 @@ const page = ({ params }) => {
           <div className="container bg-white rounded-lg border-2 p-3 md:p-6 lg:p-10">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-5 lg:gap-10">
               <div className="col-span-1 md:col-span-3 p-3 lg:p-8 relative lg:hidden block">       
-                <ContactForm/>
+              <div className='border border-blue-700/30 rounded-md overflow-hidden shadow-lg lg:sticky top-6 p-4 lg:p-6 form-bg'>
+                  <h4 className='text-2xl text-blue-950 font-bold text-center mb-5'>Get A Expert Call Back</h4>
+                  <ContactForm/>
+                </div>  
               </div>
               <div className="col-span-1 md:col-span-5 my-auto text-justify px-3">
                 <span className='text-xl text-blue-600 font-semibold block mb-3'>Improving Water Quality:</span>
@@ -27,8 +30,11 @@ const page = ({ params }) => {
                 <h3 className="mb-5 text-3xl font-bold text-blue-950 text-left">Conclusion</h3>
                 <p className="mb-10">In a world where having access to safe and clean drinking water is essential, Leemart stands out as a leader in the industry by providing not only cutting-edge RO water purifiers but also unmatched installation, maintenance, and repair services. You may feel secure knowing that your water purification requirements are being handled by professionals committed to providing nothing less than excellence when Leemart is on your side.</p>
               </div>
-              <div className="col-span-1 md:col-span-3 p-3 lg:p-8 relative hidden lg:block">       
-                <ContactForm/>
+              <div className="col-span-1 md:col-span-3 p-3 lg:p-8 relative hidden lg:block">     
+                <div className='border border-blue-700/30 rounded-md overflow-hidden shadow-lg lg:sticky top-6 p-4 lg:p-6 form-bg'>
+                  <h4 className='text-2xl text-blue-950 font-bold text-center mb-5'>Get A Expert Call Back</h4>
+                  <ContactForm/>
+                </div>  
               </div>
             </div>
           </div>

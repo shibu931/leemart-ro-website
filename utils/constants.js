@@ -56,7 +56,7 @@ export const homeCatalog = [
     {
       label: "Ro Water Purifiers",
       description: "Thousands trust Leemart Water Purifiers, India's top brand, for pure water. Leemart promises the highest-quality water with breakthrough Mineral Purification technology and a multi-stage purification process includes RO+UV+UF+UV LED in storage tank. Digital Display of Purity and Minerals shows purified water quality, filter life, RO flow rate, and more. Leemart constantly provides pure, healthy drinking water.",
-      href: "ro-water-purifiers",
+      href: "/products/ro-water-purifiers",
       img: "/img/products/leemart_qurd.png"
     },
     // {
@@ -68,7 +68,7 @@ export const homeCatalog = [
     {
       label: "Commercial Water Purifiers",
       description: "Introduce AquaClear Industrial Water Purifiers: Design for Efficiency and Purity. Our durable systems produce high-quality water that meets industrial standards. AquaClear optimizes performance in many industrial environments using innovative filtration and purification technologies. AquaClear provides clean, safe water to protect your operations and boost productivity.",
-      href: "ro-water-purifiers",
+      href: "/products/ro-water-purifiers",
       img: "/img/products/industrial/500.webp"
     },
     // {
