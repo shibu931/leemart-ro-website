@@ -17,7 +17,7 @@ export const navItems = [
             //     href: "/products/uv-water-purifiers"
             // },
             {
-                label: "Industrial Water Plant",
+                label: "Commercial Water Plant",
                 href: "/products/commercial-water-purifiers"
             },
         ]
@@ -68,7 +68,7 @@ export const homeCatalog = [
     {
       label: "Commercial Water Purifiers",
       description: "Introduce AquaClear Industrial Water Purifiers: Design for Efficiency and Purity. Our durable systems produce high-quality water that meets industrial standards. AquaClear optimizes performance in many industrial environments using innovative filtration and purification technologies. AquaClear provides clean, safe water to protect your operations and boost productivity.",
-      href: "/products/ro-water-purifiers",
+      href: "/products/commercial-water-purifiers",
       img: "/img/products/industrial/500.webp"
     },
     // {

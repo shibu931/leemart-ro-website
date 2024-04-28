@@ -162,6 +162,22 @@ export const productData = [
 
     },
     {
+        productName:"Leemart Diamond Water Purifer",
+        propertyName1_link1: "",
+        propertyName1_link2: "",
+        productFeature: [
+            "Digital Panel",
+            "Attractive Look",
+            "Purify 99.9% Bacteria",
+            "Comes with RO+UV+Alkaline",
+            "10L Storage Capacity"
+        ],
+        productImage: "/img/products/leemart_diamond.webp",
+        productPrice: 15500,
+        productCategory:'RO'
+
+    },
+    {
         productName:"50 LPH Water Purifier",
         propertyName1_link1: "",
         propertyName1_link2: "",

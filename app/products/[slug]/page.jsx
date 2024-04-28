@@ -22,6 +22,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import ContactForm from '@/components/shared/ContactForm'
 
 
 const page = ({ params }) => {
@@ -86,38 +87,50 @@ const page = ({ params }) => {
             <Header title={title} />
             <div className='py-10 container'>
                 <div className="grid md:grid-cols-12 gap-4 lg:gap-8 relative">
-                    <div className='md:col-span-4 lg:col-span-3 '>
-                        <div className='filters-drawer md:px-5 lg:px-8'>
+                    <div className='md:col-span-4 lg:col-span-3 relative'>
+                        <div className='filters-drawer lg:sticky md:px-5 top-6  lg:px-8'>
                             <div className='mb-5'>
-                                <span className='font-medium text-lg block mb-3'>Sort By</span>
-                                <RadioGroup defaultValue="comfortable" onValueChange={(value) => { handleSortChange(value) }}>
-                                    <div className="flex items-center justify-between">
-                                        <Label className="font-normal" htmlFor="popularity">None</Label>
-                                        <RadioGroupItem value="none" id="popularity" />
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <Label className="font-normal" htmlFor="pricelowtohigh">Price Low to High</Label>
-                                        <RadioGroupItem value="pricelowtohigh" id="pricelowtohigh" />
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <Label className="font-normal" htmlFor="pricehightolow">Price High to Low</Label>
-                                        <RadioGroupItem value="pricehightolow" id="pricehightolow" />
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <Label className="font-normal" htmlFor="alphabeticala-z">Alphabetical (A-Z)</Label>
-                                        <RadioGroupItem value="a-z" id="alphabeticala-z" />
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <Label className="font-normal" htmlFor="alphabeticalz-a">Alphabetical (Z-A)</Label>
-                                        <RadioGroupItem value="z-a" id="alphabeticalz-a" />
-                                    </div>
-                                </RadioGroup>
+                                <Accordion type="single" collapsible>
+                                    <AccordionItem value="item-1">
+                                        <AccordionTrigger className='font-medium text-sm hover:no-underline'>Sort By</AccordionTrigger>
+                                        <AccordionContent className="mt-4">
+                                            <RadioGroup defaultValue="comfortable" onValueChange={(value) => { handleSortChange(value) }}>
+                                                <div className="flex items-center justify-between">
+                                                    <Label className="font-normal" htmlFor="popularity">None</Label>
+                                                    <RadioGroupItem value="none" id="popularity" />
+                                                </div>
+                                                <div className="flex items-center justify-between">
+                                                    <Label className="font-normal" htmlFor="pricelowtohigh">Price Low to High</Label>
+                                                    <RadioGroupItem value="pricelowtohigh" id="pricelowtohigh" />
+                                                </div>
+                                                <div className="flex items-center justify-between">
+                                                    <Label className="font-normal" htmlFor="pricehightolow">Price High to Low</Label>
+                                                    <RadioGroupItem value="pricehightolow" id="pricehightolow" />
+                                                </div>
+                                                <div className="flex items-center justify-between">
+                                                    <Label className="font-normal" htmlFor="alphabeticala-z">Alphabetical (A-Z)</Label>
+                                                    <RadioGroupItem value="a-z" id="alphabeticala-z" />
+                                                </div>
+                                                <div className="flex items-center justify-between">
+                                                    <Label className="font-normal" htmlFor="alphabeticalz-a">Alphabetical (Z-A)</Label>
+                                                    <RadioGroupItem value="z-a" id="alphabeticalz-a" />
+                                                </div>
+                                            </RadioGroup>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>
                             </div>
                             <hr />
                             <div className='mb-5'>
-                                <span className='font-medium text-lg block mb-3'>Filter By Price</span>
-                                <Slider defaultValue={[26000]} onValueChange={(value) => { setPrice(value) }} min={5000} max={26000} step={1} />
-                                <span className='font-medium text-md text-gray-500 block mt-2'>₹5000 - ₹{price}</span>
+                                <Accordion type="single" collapsible>
+                                    <AccordionItem value="item-1">
+                                        <AccordionTrigger className='font-medium text-sm hover:no-underline'>Filter By Price</AccordionTrigger>
+                                        <AccordionContent className="mt-4">
+                                            <Slider defaultValue={[26000]} onValueChange={(value) => { setPrice(value) }} min={5000} max={26000} step={1} />
+                                            <span className='font-medium text-md text-gray-500 block mt-2'>₹5000 - ₹{price}</span>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>
                             </div>
                             {/* <hr />
                             <div className="">
@@ -245,7 +258,7 @@ const page = ({ params }) => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
                             {
                                 productList.map((product) => (
-                                    <div className={`rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6 ${product.productPrice == '0' ? 'col-span-2':''}`}>
+                                    <div className={`rounded-lg text-center bg-white border shadow-xl shadow-blue-400/10 border-black/20 p-4 lg:p-6 ${product.productPrice == '0' ? 'col-span-2' : ''}`}>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                             <div className='p-2'>
                                                 <Image
@@ -253,7 +266,7 @@ const page = ({ params }) => {
                                                     width={200}
                                                     height={260}
                                                     alt={product.name}
-                                                    className={`mx-auto ${product.productPrice == '0' ? 'w-[300px]':''}`}
+                                                    className={`mx-auto ${product.productPrice == '0' ? 'w-[300px]' : ''}`}
                                                 />
                                             </div>
                                             <div className='h-full'>
@@ -306,29 +319,7 @@ const page = ({ params }) => {
                                                                             <DialogHeader>
                                                                                 <DialogTitle>Request A Call Back</DialogTitle>
                                                                                 <DialogDescription>
-                                                                                    <form>
-                                                                                        <div className="mb-4">
-                                                                                            <label className="block text-blue-950 text-sm font-bold mb-2" for="name">
-                                                                                                Name
-                                                                                            </label>
-                                                                                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-blue-950 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter Your Name" />
-                                                                                        </div>
-                                                                                        <div className="mb-4">
-                                                                                            <label className="block text-blue-950 text-sm font-bold mb-2" for="number">
-                                                                                                Phone Number
-                                                                                            </label>
-                                                                                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-blue-950 leading-tight focus:outline-none focus:shadow-outline" id="number" type="tel" placeholder="Enter Your Phone Number" />
-                                                                                        </div>
-                                                                                        <div className="mb-4">
-                                                                                            <label htmlFor="message" className='block text-blue-950 text-sm font-bold mb-2'>Your Address</label>
-                                                                                            <textarea name="message" id="message" className='block shadow appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' rows="2" placeholder='Enter Your Address'></textarea>
-                                                                                        </div>
-                                                                                        <div className="flex items-center justify-between">
-                                                                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                                                                                                Submit
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </form>
+                                                                                    <ContactForm/>
                                                                                 </DialogDescription>
                                                                             </DialogHeader>
                                                                         </DialogContent>

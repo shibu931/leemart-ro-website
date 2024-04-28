@@ -3,8 +3,9 @@ import { StarIcon } from "@heroicons/react/24/solid";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import CarouselCard from "@/components/shared/CarouselCard";
-import { homeCatalog, reviews, uspList,faqs } from "@/utils/constants";
+import { homeCatalog, reviews, uspList, faqs } from "@/utils/constants";
 import FaqAccordion from "@/components/shared/FaqAccordion";
+import CtaDialog from "@/components/shared/CtaDialog";
 
 
 export default function Home() {
@@ -39,7 +40,6 @@ export default function Home() {
                     <div >
                       <p className="text-lg font-normal text-left">Trustpilot</p>
                       <span className="font-bold">4/5
-                        <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
                         <StarIcon className="h-5 mb-1 w-5 inline text-yellow-400" />
@@ -94,7 +94,7 @@ export default function Home() {
               homeCatalog.map((item, index) => (
                 <div className="bg-white shadow-2xl hover:border rounded-xl shadow-blue-200/50 p-4 md:p-10" key={index}>
                   <div className="grid sm:grid-cols-2">
-                  <div className="mx-auto lg:hidden block">
+                    <div className="mx-auto lg:hidden block">
                       <Image
                         src={item.img}
                         width={260}
@@ -125,10 +125,133 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <h2 className="text-center text-3xl">Our Services</h2>
+          <div className="mt-10">
+            <h3 className="text-center text-3xl font-semibold mb-8">Our Reputeted Customers</h3>
+            <div className="bg-white rounded-lg shadow">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 p-4">
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client001.jpg'
+                  width={200}
+                  height={200}
+                  alt='Bal Bhavan'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client002.png'
+                  width={200}
+                  height={200}
+                  alt='AIIMS Logo'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client003.jpeg'
+                  width={200}
+                  height={200}
+                  alt='AIIMS Logo'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client004.jpeg'
+                  width={200}
+                  height={200}
+                  alt='Baptist Convent Sr Sec. School'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client005.png'
+                  width={200}
+                  height={200}
+                  alt='polex International'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client006.jpeg'
+                  width={200}
+                  height={200}
+                  alt='St Stephens School'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client007.png'
+                  width={200}
+                  height={200}
+                  alt='Nestor Pharmaceuticals Ltd'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client008.jpeg'
+                  width={200}
+                  height={200}
+                  alt='PWD Delhi Gov'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client009.png'
+                  width={200}
+                  height={200}
+                  alt='Ministry Of Rural Development'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client010.png'
+                  width={200}
+                  height={200}
+                  alt='Lok Nayak Hospital'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client011.jpg'
+                  width={200}
+                  height={200}
+                  alt='Muncipal Corporation Of Delhi'
+                  className='w-full'
+                />
+              </div>
+              <div className='p-4 sm:p-6 md:p-8 lg:p-10'>
+                <Image
+                  src='/img/clients/client012.jpg'
+                  width={200}
+                  height={200}
+                  alt='Vardhman Shiksha Niketan'
+                  className='w-full'
+                />
+              </div>
+            </div>
+              <div className="flex justify-center pb-4 w-full">
+              <CtaDialog className="my-4"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <h2 className="text-center font-semibold text-3xl">Our Services</h2>
           <div className="my-10">
             <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5">
-            <div className="mx-auto lg:hidden block">
+              <div className="mx-auto lg:hidden block">
                 <Image
                   src="/img/service_man.png"
                   width={350}
@@ -153,13 +276,13 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white shadow-2xl shadow-blue-200/50 p-5 md:p-6 lg:p-10 rounded-xl grid lg:grid-cols-2 gap-5 mt-5">
-            <div className="mx-auto">
+              <div className="mx-auto">
                 <Image
-                  src="/img/products/industrial/10000.webp"
+                  src="/img/products/industrial/2000.webp"
                   width={450}
                   height={450}
                   alt="industrial plant"
-                  className="w-full"
+                  className="w-[320px]"
                 />
               </div>
               <div>
@@ -199,7 +322,7 @@ export default function Home() {
 
       <section>
         <div className="container text-center">
-          <h2 className="text-3xl">Our Usp</h2>
+          <h2 className="text-3xl font-semibold">Our Usp</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 mt-10 lg:px-10">
             {
               uspList.map((item, index) => (
@@ -219,7 +342,7 @@ export default function Home() {
 
       <section>
         <div className="container px-2">
-          <h2 className="text-center text-3xl">Testimonials</h2>
+          <h2 className="text-center text-3xl font-semibold">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-8 mt-10">
             <div className="lg:col-span-6 lg:col-start-2">
               <CarouselCard reviews={reviews} />
@@ -230,7 +353,7 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <h2 className="text-center text-3xl">Frequently Asked Question's</h2>
+          <h2 className="text-center text-3xl font-semibold">Frequently Asked Question's</h2>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 lg:gap-10">
             <div className="md:col-span-5 lg:col-span-5">
               <Image
@@ -242,7 +365,7 @@ export default function Home() {
               />
             </div>
             <div className="md:col-span-7 lg:col-span-7 my-auto lg:px-4">
-              <FaqAccordion faqs={faqs}/>
+              <FaqAccordion faqs={faqs} />
             </div>
           </div>
         </div>

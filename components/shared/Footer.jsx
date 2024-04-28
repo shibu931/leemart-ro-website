@@ -28,7 +28,7 @@ const Footer = () => {
             <h5 className='text-xl font-semibold mb-4'>Quick Links</h5>
             <ul>
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/">Home</Link></li>
-              <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/blogs">Blogs</Link></li>
+
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/contactus">Contact Us</Link></li>
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/aboutus">About Us</Link></li>
             </ul>
@@ -37,7 +37,6 @@ const Footer = () => {
             <h5 className='text-xl font-semibold mb-4'>Products</h5>
             <ul>
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/ro-water-purifiers">Ro Water Purifiers</Link></li>
-              <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/uv-water-purifiers">UV Water Purifiers</Link></li>
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/water-softeners">Water Softeners</Link></li>
               <li className='mb-1 text-md hover:text-blue-200'><Link className='focus:outline-none focus:bg-blue-300/50 rounded-sm' href="/commercial-water-purifiers">Commercial Water Purifiers</Link></li>
             </ul>
@@ -58,13 +57,9 @@ const Footer = () => {
       <div className="bg-blue-700">
         <div className="container py-4 lg:px-20">
           <div>
-            <div className="grid md:grid-cols-2 text-base text-blue-100">
-              <div className='mx-auto lg:me-auto mb-2'>
+            <div className="grid md:grid-cols-1 text-base text-blue-100">
+              <div className='mx-auto lg:me-auto mb-2 text-center'>
                 <p className='inline'>Leemart © 2024. All rights reserved.</p>
-              </div>
-              <div className='mx-auto lg:ms-auto mb-2'>
-                <Link href="/privacy-policy">Privacy Policy</Link> |
-                <Link href="/disclaimer"> Disclaimer</Link>
               </div>
             </div>
           </div>

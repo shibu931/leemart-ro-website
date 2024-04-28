@@ -22,11 +22,10 @@ const CarouselCard = ({ reviews }) => {
                                 <div className="review-header bg-blue-500 text-white flex justify-between p-3 border-b-2 border-blue-700/20">
                                     <span className="font-semibold ">{item.name}</span>
                                     <span className="font-bold">
+                                        {/* <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
                                         <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
                                         <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
-                                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" />
+                                        <StarIcon class="h-5 mb-1 w-5 inline text-yellow-400" /> */}
                                     </span>
                                 </div>
                                 <div className="review-body bg-white py-5 px-2 my-auto">
