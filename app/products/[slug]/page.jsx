@@ -286,6 +286,24 @@ const page = ({ params }) => {
                                                             <div className='my-2'>
                                                                 <p className='font-semibold text-left'>MRP : ₹{product.productPrice}</p>
                                                             </div>
+
+                                                            <div className='flex mt-3'>
+                                                                    <Dialog>
+                                                                        <DialogTrigger className='bg-blue-800 mx-2 rounded-md text-white font-medium p-2'>Order Now</DialogTrigger>
+                                                                        <DialogContent>
+                                                                            <DialogHeader>
+                                                                                <DialogTitle>Request A Call Back</DialogTitle>
+                                                                                <DialogDescription>
+                                                                                    <ContactForm/>
+                                                                                </DialogDescription>
+                                                                            </DialogHeader>
+                                                                        </DialogContent>
+                                                                    </Dialog>
+
+                                                                </div>
+
+                                                            {/*
+                                                            ============ Amazon And Flipkart Buy Button ===============
                                                             <div className='flex mt-3'>
                                                                 <Link href="#" className='bg-blue-500 hover:bg-blue-600 focus:bg-blue-500 border-blue-700 border me-2 rounded-md text-white font-medium p-2'>
                                                                     Buy On
@@ -307,7 +325,7 @@ const page = ({ params }) => {
                                                                         className='inline ms-2'
                                                                     />
                                                                 </Link>
-                                                            </div>
+                                                            </div> */}
                                                         </>
                                                     ) :
                                                         (
